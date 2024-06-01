@@ -60,7 +60,8 @@ class MatrixApp(app.App):
         # Fill the background with black color
         ctx.rgb(0, 0, 0).rectangle(-120, -120, 240, 240).fill()
         # Set the font for drawing text
-        ctx.font = ctx.get_font_name(5)
+        # This worked in the Sim but not on real hardware.
+        # ctx.font = ctx.get_font_name(5)
         
         # Define LGBT flag colors
         lgbt_colors = [
